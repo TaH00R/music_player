@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
               artist: metadata.albumArtistName ?? 'Unknown',
               album: metadata.albumName ?? 'Unknown',
               path: file.path!,
-              //lyrics: metadata.trackLyrics, // Corrected metadata property
+              //lyrics: metadata.trackLyrics, 
             ));
           }
         } catch (e) {
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
       }
       
       if (songs.isNotEmpty) {
-        // Replace existing songs with the newly picked ones
+
         Provider.of<PlayerProvider>(context, listen: false).setSongs(songs);
       }
     } catch (e) {
@@ -136,7 +136,7 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.library_music), label: "Library"),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Theme.of(context).colorScheme.primary, // Spotify Green
+        selectedItemColor: Theme.of(context).colorScheme.primary, 
         unselectedItemColor: Colors.white54,
         onTap: _onItemTapped,
         backgroundColor: Theme.of(context).colorScheme.background,
