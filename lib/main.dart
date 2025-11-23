@@ -17,7 +17,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  // Use dark mode as the default for the Spotify aesthetic
   ThemeMode _themeMode = ThemeMode.dark; 
 
   void _toggleTheme() {
@@ -38,7 +37,6 @@ class _MyAppState extends State<MyApp> {
         debugShowCheckedModeBanner: false,
         title: 'Local Music Player',
         
-        // Default light theme
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
             seedColor: Colors.green,
@@ -46,16 +44,15 @@ class _MyAppState extends State<MyApp> {
           ),
           useMaterial3: true,
         ),
-        
-        // ⭐️ SPOTIFY-LIKE DARK THEME ⭐️
+
         darkTheme: ThemeData(
-          primaryColor: const Color(0xFF1DB954), // Spotify Green
+          primaryColor: const Color(0xFF1DB954), 
           colorScheme: ColorScheme.fromSeed(
             seedColor: const Color(0xFF1DB954),
             brightness: Brightness.dark,
           ).copyWith(
-            background: const Color(0xFF121212), // Very dark background
-            surface: const Color(0xFF181818), // Used for the mini player
+            background: const Color(0xFF121212), 
+            surface: const Color(0xFF181818), 
             primary: const Color(0xFF1DB954),
             secondary: const Color(0xFF1DB954),
           ),
