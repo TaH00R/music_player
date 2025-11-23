@@ -58,7 +58,6 @@ class _MyAppState extends State<MyApp> {
           ),
           scaffoldBackgroundColor: const Color(0xFF121212),
           useMaterial3: true,
-          // Customizing text and app bar for dark theme visibility
           textTheme: const TextTheme(
             bodyLarge: TextStyle(color: Colors.white),
             bodyMedium: TextStyle(color: Colors.white70),
