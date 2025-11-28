@@ -57,17 +57,6 @@ A sleek, local-file-based music player application built with Flutter, designed 
     flutter run
     ```
 
-### Image Setup Instructions
-
-Make sure your image files are accessible in your repository by following these steps:
-
-1.  Create a folder named **`demos`** in the root directory of your project.
-2.  Place your four screenshots inside this folder, ensuring they are named exactly:
-    * `homepage.png`
-    * `playerpage.png`
-    * `favourites.png`
-    * `lyrics.png`
-
 ---
 
 ## 📂 Project Structure & Key Files
